@@ -37,13 +37,12 @@ public class SliderAdapter extends LoopVPAdapter<Object> {
 
         if (data instanceof String)
         {
-
+            Glide.with(mContext).load((String) data).into(imageView);
         }else if (data instanceof Integer)
         {
-
+            imageView.setImageResource((int)data);
         }
 
-        Glide.with(mContext).load(data).into(imageView);
         return imageView;
     }
 

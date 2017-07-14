@@ -33,7 +33,7 @@ public class SliderViewPager extends RelativeLayout {
     }
 
 
-    public void addUrls(Context context, ArrayList<String> list) {
+    public void addUrls(Context context, ArrayList<Object> list) {
 
         viewPager = (ViewPager)findViewById(R.id.slide_container);
         new SliderAdapter(context, list, viewPager);
