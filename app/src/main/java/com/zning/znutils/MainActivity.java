@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         sliderViewPager = (SliderViewPager)findViewById(R.id.slider_view);
 
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<Object> list = new ArrayList<>();
 
         list.add("http://seopic.699pic.com/photo/00005/5186.jpg_wh1200.jpg");
         list.add("http://seopic.699pic.com/photo/00005/5186.jpg_wh1200.jpg");
