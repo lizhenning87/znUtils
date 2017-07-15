@@ -36,9 +36,6 @@ public abstract class LoopVPAdapter<T> extends PagerAdapter implements ViewPager
             views.add(getItemView(data));
         }
 
-
-        System.out.println("views size : " + views.size());
-
         mViewPager = viewPager;
         viewPager.setAdapter(this);
         viewPager.addOnPageChangeListener(this);
