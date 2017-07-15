@@ -1,6 +1,7 @@
 package com.uesugi.library.utils;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.widget.Toast;
 
 /**
@@ -40,6 +41,27 @@ public class Utils {
             if (string == null || string.equals(""))
             {
                 ret = true;
+            }
+
+            return ret;
+        }
+
+    }
+
+    public static class App {
+
+        public static boolean checkAppInstall(Context context, String packageName) {
+
+            boolean ret = false;
+
+            PackageManager pm = context.getPackageManager();
+            try {
+
+                pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
+                ret = true;
+
+            }catch (PackageManager.NameNotFoundException e) {
+
             }
 
             return ret;
