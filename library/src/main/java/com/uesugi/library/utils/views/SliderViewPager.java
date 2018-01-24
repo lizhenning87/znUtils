@@ -41,4 +41,8 @@ public class SliderViewPager extends RelativeLayout {
     }
 
 
+    public ViewPager getViewPager() {
+        return viewPager;
+    }
+
 }
